@@ -8,7 +8,7 @@ def to_utf8(text):
     try: # unicode or pure ascii
         return text.encode("utf8")
     except UnicodeDecodeError:
-        try: # successful UTF-8 decode means is pretty sure UTF-8 already
+        try: # successful UTF-8 decode means it's pretty sure UTF-8 already
             text.decode("utf8")
             return text
         except UnicodeDecodeError:
@@ -17,7 +17,8 @@ def to_utf8(text):
             except UnicodeDecodeError:
                 pass
 
-    return text # return unchanged, hope for the best>>> import to_uft8
+    return text # return unchanged, hope for the best
+
 
 if __name__ == '__main__':
     print(repr(to_utf8(None)))
