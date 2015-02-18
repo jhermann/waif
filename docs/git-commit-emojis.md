@@ -19,6 +19,7 @@ The following is a possible scheme to use:
 | :pencil2: | typo | `:pencil2:` |
 | :twisted_rightwards_arrows: | refactoring | `:twisted_rightwards_arrows:` |
 | :package: | release | `:package:` |
+| :construction: | build + automation | `:construction:` |
 | :clap: | contribution | `:clap:` |
 | :warning: | breaking | `:warning:` |
 | :exclamation: | important | `:exclamation:` |
