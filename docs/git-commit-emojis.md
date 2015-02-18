@@ -14,6 +14,7 @@ The following is a possible scheme to use:
 | :bug: | bug | `:bug:` |
 | :arrow_upper_right: | improvement | `:arrow_upper_right:` |
 | :new: | new feature | `:new:` |
+| :white_check_mark: | tests | `:white_check_mark:` |
 | :book: | documentation | `:book:` |
 | :pencil2: | typo | `:pencil2:` |
 | :twisted_rightwards_arrows: | refactoring | `:twisted_rightwards_arrows:` |
@@ -23,4 +24,3 @@ The following is a possible scheme to use:
 | :exclamation: | important | `:exclamation:` |
 | :pray: | experimental | `:pray:` |
 | :recycle: | dead code removal | `:recycle:` |
-
