@@ -25,3 +25,4 @@ The following is a possible scheme to use:
 | :exclamation: | important | `:exclamation:` |
 | :pray: | experimental | `:pray:` |
 | :recycle: | dead code removal | `:recycle:` |
+| :zzz: | minor / boring change | `:zzz:` |
