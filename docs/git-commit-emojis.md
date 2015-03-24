@@ -15,6 +15,7 @@ The following is a possible scheme to use:
 | :arrow_upper_right: | improvement | `:arrow_upper_right:` |
 | :new: | new feature | `:new:` |
 | :white_check_mark: | tests | `:white_check_mark:` |
+| :mag: | code qa | `:mag:` |
 | :book: | documentation | `:book:` |
 | :pencil2: | typo | `:pencil2:` |
 | :twisted_rightwards_arrows: | refactoring | `:twisted_rightwards_arrows:` |
