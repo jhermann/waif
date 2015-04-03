@@ -27,3 +27,6 @@ The following is a possible scheme to use:
 | :pray: | experimental | `:pray:` |
 | :recycle: | dead code removal | `:recycle:` |
 | :zzz: | minor / boring change | `:zzz:` |
+
+Other similar schemes:
+ * by (srirams6)[https://github.com/srirams6/py-threadpool/blob/master/CONTRIBUTING.md]
