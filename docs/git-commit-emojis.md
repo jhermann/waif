@@ -29,4 +29,4 @@ The following is a possible scheme to use:
 | :zzz: | minor / boring change | `:zzz:` |
 
 Other similar schemes:
- * by (srirams6)[https://github.com/srirams6/py-threadpool/blob/master/CONTRIBUTING.md]
+ * by [srirams6](https://github.com/srirams6/py-threadpool/blob/master/CONTRIBUTING.md)
