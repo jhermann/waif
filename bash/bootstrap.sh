@@ -13,7 +13,7 @@ test $(id -u) -eq 0 || fail 'Run me as root!'
 apt-get update
 apt-get upgrade
 apt-get install -y curl wget htop tmux
-apt-get install -y build-essential git gitk libxml2-dev libxslt1-dev
+apt-get install -y build-essential git gitk libxml2-dev libxslt1-dev libz-dev
 apt-get install -y python python-setuptools python-pkg-resources python-virtualenv python-pip python-dev
 
 mkdir -p /root/.ssh
