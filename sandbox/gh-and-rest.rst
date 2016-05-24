@@ -10,9 +10,10 @@ Section 1
 ---------
 
 A link to `Section 2`_ below.
-Also `with alternate text <Section 2>`_ 
+Also `with alternate text <#section-2>`_ (requires constructing the anchor, which isn't too nice).
 
 These work in *Sphinx*, but not on GH:
+
 * A labeled :ref:`section-two` link?
 * Or `section-two`_?
 * Possibly needing `explicit text + label <section-two>`_?
