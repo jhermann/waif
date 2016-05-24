@@ -14,6 +14,18 @@ A labeled :ref:`section2` link?
 Or `section2`_?
 Possibly needing `explicit text + label <#section2>`_?
 
+Some spacing::
+
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+
 
 .. _section2:
 
