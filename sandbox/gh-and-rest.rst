@@ -9,7 +9,7 @@ Main Title
 Section 1
 ---------
 
-A link to `Section 2`_ below. Which gets rendered ugly due to inclusion of the markup.
+A link to `Section 2`_ below.
 
 A better `section2`_ link? Possibly needing `explicit text + label <#section2>`_?
 
