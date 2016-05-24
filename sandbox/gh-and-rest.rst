@@ -10,8 +10,9 @@ Section 1
 ---------
 
 A link to `Section 2`_ below.
-
-A better :ref:`section2` link? Possibly needing `explicit text + label <section2>`_?
+A labeled :ref:`section2` link?
+Or `section2`_?
+Possibly needing `explicit text + label <#section2>`_?
 
 
 .. _section2:
