@@ -10,9 +10,12 @@ Section 1
 ---------
 
 A link to `Section 2`_ below.
-A labeled :ref:`section2` link?
-Or `section2`_?
-Possibly needing `explicit text + label <#section2>`_?
+Also `with alternate text <Section 2>`_ 
+
+These work in *Sphinx*, but not on GH:
+* A labeled :ref:`section-two` link?
+* Or `section-two`_?
+* Possibly needing `explicit text + label <section-two>`_?
 
 Some spacing::
 
@@ -27,7 +30,7 @@ Some spacing::
     9
 
 
-.. _section2:
+.. _section-two:
 
 Section 2
 ---------
