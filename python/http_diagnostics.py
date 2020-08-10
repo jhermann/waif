@@ -81,6 +81,8 @@ def http_diagnostics(handler=print):
                 data = data[:MAX_ERROR_LINES] + ['...']
             data = '\n    RESPONSE BODY:\n' + '\n'.join(['    ' + x for x in data])
 
+        if url in message:
+            url = ''
         exc = handler("HTTP{}{} ERROR{}{}: {}{}".format(
             '::' if method else '', method,
             ' for ' if url else '', url,
@@ -91,7 +93,7 @@ def http_diagnostics(handler=print):
 
 if __name__ == '__main__':
     bad_url = 'http://failure.exampe.com/'
-    timeout = .05  # try .05
+    timeout = 5  # try .05
 
     print('HTTP.CLIENT')
     with http_diagnostics():
