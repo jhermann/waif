@@ -28,6 +28,7 @@ CONN_ERRORS = (
 )
 HTTP_ERRORS = CONN_ERRORS + (
     http.client.HTTPException,
+    urllib.error.URLError,
     urllib.error.HTTPError,
 )
 MAX_ERROR_LINES = 15
@@ -53,15 +54,17 @@ def http_diagnostics(handler=print):
         import pprint
 
         response = getattr(cause, 'response', getattr(cause, 'file', None))
-        request = getattr(response, 'request', None)
+        request = getattr(response, 'request', getattr(cause, 'request', None))
         if 0:
-            context = dict(exc_type=type(cause), exc_obj=vars(cause))
+            context = dict(exc_type=type(cause), exc_args=cause.args, exc_obj=vars(cause),
+                messages=[str(x) for x in cause.args])
             if request: context['request'] = vars(request)
             if response: context['response'] = vars(response)
             pprint.pprint(context)
 
-        url = getattr(cause, 'url', '')
+        url = getattr(cause, 'url', getattr(request, 'url', ''))
         method = getattr(request, 'method', getattr(response, '_method', ''))
+        message = getattr(cause, 'reason', str(cause))
         try:
             data = pprint.pformat(response.json(), indent=4)
         except (AttributeError, TypeError, ValueError):
@@ -81,14 +84,14 @@ def http_diagnostics(handler=print):
         exc = handler("HTTP{}{} ERROR{}{}: {}{}".format(
             '::' if method else '', method,
             ' for ' if url else '', url,
-            cause, data))
+            message, data))
         if exc:
             raise exc from cause
 
 
 if __name__ == '__main__':
     bad_url = 'http://failure.exampe.com/'
-    timeout = 5  # try .05
+    timeout = .05  # try .05
 
     print('HTTP.CLIENT')
     with http_diagnostics():
@@ -105,7 +108,7 @@ if __name__ == '__main__':
 
     print('\nURLLIB')
     with http_diagnostics():
-        urllib.request.urlopen(bad_url)
+        urllib.request.urlopen(bad_url, timeout=timeout)
 
     if requests:
         print('\nREQUESTS')
