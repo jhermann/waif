@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 16 16"
+   version="1.1"
+   id="svg1035"
+   sodipodi:docname="pyramid.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1039" />
+  <sodipodi:namedview
+     id="namedview1037"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.03"
+     inkscape:cx="400"
+     inkscape:cy="399.51456"
+     inkscape:window-width="1920"
+     inkscape:window-height="1123"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1035" />
+  <path
+     fill="#444"
+     d="M 10.215575,5.0975 8,1.2275 5.784425,5.0975 Z"
+     id="path1029"
+     style="fill:#ececec;stroke-width:0.9675" />
+  <path
+     fill="#444"
+     d="M 2.475575,10.9025 0.26,14.7725 h 15.48 l -2.215575,-3.87 z"
+     id="path1031"
+     style="fill:#ececec;stroke-width:0.9675" />
+  <path
+     fill="#444"
+     d="m 12.97295,9.935 -2.2059,-3.87 h -5.5341 l -2.2059,3.87 z"
+     id="path1033"
+     style="fill:#ececec;stroke-width:0.9675" />
+</svg>
