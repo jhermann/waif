@@ -42,7 +42,6 @@ so they can be moved if needed, without extensive reindexing.
 `/srv/svc/jellyfin/docker-compose.yml`
 
 ```yaml
-docker-compose.yml
 version: '3.5'
 services:
   jellyfin:
@@ -71,7 +70,6 @@ services:
 To prepare your system, you need to `sudo apt install docker.io docker-compose`.
 
 Setup as `root`:
-
 ```sh
 docker pull jellyfin/jellyfin  # docker.io/jellyfin/jellyfin:latest
 mkdir -p /srv/svc/jellyfin/{cache,config/log}
@@ -87,15 +85,15 @@ ln -nfs config/log /srv/svc/jellyfin/log  # make logs more visible
 Start:<br />
 `cd /srv/svc/jellyfin; docker-compose up --detach`
 
- Docker compose (re-)start:<br />
- `cd /srv/svc/jellyfin; docker-compose down ; docker-compose up -d`
+Docker compose (re-)start:<br />
+`cd /srv/svc/jellyfin; docker-compose down ; docker-compose up -d`
 
- Docker compose logs:<br />
- `cd /srv/svc/jellyfin; docker-compose logs -f`
+Docker compose logs:<br />
+`cd /srv/svc/jellyfin; docker-compose logs -f`
 
- Server update (check for necessary plugin updates afterwards):
- ```sh
+Server update (check for necessary plugin updates afterwards):
+```sh
 cd /srv/svc/jellyfin; docker-compose down
 docker pull jellyfin/jellyfin:latest
 docker-compose up -d
-}}}
+```
